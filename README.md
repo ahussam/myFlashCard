@@ -17,6 +17,14 @@ install *mongodb* on the OS first, then:
 npm install mongodb --save
 ```
 
+MongoDB collection name: **cards** 
+
+Collection schema: 
+* _id: IdObject
+* front: string
+* back: string 
+* solved: int32 
+* tag: string
 
 ### Installing
 
