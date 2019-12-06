@@ -1,0 +1,49 @@
+@html.extend('layout',function(model){
+
+	@html.block('body',function(model){
+                        <form id="myform" action="addCard.json" method="put"> 
+							<h1>Add a Card:</h1>
+							<input type="radio" name="type" value="g" id="radio-one" class="form-radio" checked>
+							<label for="radio-one">General</label>
+							<input type="radio" name="type" value="s" id="radio-two" class="form-radio">
+							<label for="radio-two">Security</label>
+							<input type="radio" name="type" value="c" id="radio-three" class="form-radio">
+							<label for="radio-three">Code</label>
+							<center>
+								<h3>Question</h3>
+								<input class="form-control" type="text" style="width:200px;" placeholder="Your Quesiton" name="q" autocomplete="off">
+								<h3>Answer</h3>
+                                <input type="hidden" name="a" value="" id="answer">
+                                <input type="hidden" name="token" value="@model.token" id="answer">
+								<div id="summernote"></div>
+							</center>
+							<script>
+								$('#summernote').summernote({
+								                                tabsize: 1,
+								                                height: 100,
+								                                width: 400
+								                              });
+								
+								
+								                              function sendCard(){
+                                                                  
+								                            $("#answer").val($('#summernote').summernote('code'));
+								                            $("#myform").submit(function(event){
+								                              	event.preventDefault(); 
+									                            var post_url = $(this).attr("action"); 
+									                            var form_data = $(this).serialize(); 
+									
+									                            $.post( post_url, form_data, function( response ) {
+									                                alert('Done!'); 
+								                                    location = '/add';
+									                            });
+								});
+								
+								                              }
+							</script>
+							<br>
+							<button type="submit" class="btn btn-success" onclick="sendCard();">Add</button>
+						</form>
+    });
+
+})

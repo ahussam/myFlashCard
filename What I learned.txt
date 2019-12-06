@@ -1,0 +1,5 @@
+1- Run  [npm install --save express] in the app directory. 
+2- Handle post and json request by [npm install body-parser --save]
+3- Vash as template engine [npm install vash --save]
+4- You should restart the server after creating new files 
+5- mongo Database [npm install mongodb --save], [install mongodb on the OS first]

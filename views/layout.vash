@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@model.title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
+    <script src="https://cure53.de/purify.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">myFlashCard</a>
+        </div>
+
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="/">My Cards</a></li> <!-- todo: pagenation -->
+                <li><a href="/general">General</a></li>
+                <li><a href="/security">Security</a></li>
+                <li><a href="/code">Code</a></li>
+                <li><a href="/add">Add a Card</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="/static/activelink.js"></script>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-sm-offset-1 hid">
+            <div class="row">
+                <div class="col-sm-5 col-sm-offset-3 text-center">
+                    <div class="contentBox">
+                    <br>
+                    
+                    @html.block('body')
+                        
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
