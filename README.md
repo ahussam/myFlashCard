@@ -12,10 +12,7 @@ The app is a copy of [this](https://github.com/jwasham/computer-science-flash-ca
 ```
 sudo apt-get install nodejs
 ```
-install *mongodb* on the OS first, then: 
-```
-npm install mongodb --save
-```
+install *mongodb* on the OS first.
 
 MongoDB collection name: **cards** 
 
@@ -28,19 +25,8 @@ Collection schema:
 
 ### Installing
 
-Install the following in the myFlashCards's path: 
+Everything is set just build the collection schema in MongoDB. 
 
-*ExpressJS* 
-```
-npm install --save express
-```
-*body-parser* 
-```
-npm install body-parser --save
-```
-*Vash*  
-```
-npm install vash --save
 ```
 
 ## Built With
