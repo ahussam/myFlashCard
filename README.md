@@ -33,7 +33,6 @@ Then execute the following commands:
 user@system:$ git clone https://github.com/ahussam/myFlashCard.git
 user@system:$ cd myFlashCard
 user@system:$ node myFlashCard.js
-
 ```
 
 
