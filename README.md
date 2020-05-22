@@ -4,7 +4,7 @@ A flash card app based on NodeJS.
 
 ## Getting Started
 
-The app is a copy of [this](https://github.com/jwasham/computer-science-flash-cards) project, which I find it fun to write one with JS. Feel free to use it as you like.  BTW, use it in your local server, **don't deploy to a live server**.
+The app is a copy of [this](https://github.com/jwasham/computer-science-flash-cards) project, which I found it fun to write it with JS. Feel free to use it as you like.  BTW, use it in your local server, **don't deploy to a live server**.
 
 ### Prerequisites
 
